@@ -1,3 +1,2 @@
-loadi 123 => r123
-loadir123=>r123
-invalid
+load r1 => r2
+mult r3,r4 => r4

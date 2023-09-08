@@ -17,7 +17,14 @@ public class parser {
     public boolean parse() throws IOException {
         boolean correct = true;
         token token = scanner.scan();
+        IR ir = new IR();
+    
         while (token.category != "EOF") {
+            lineIR currIR = new lineIR(); 
+            ir.addNewLineIR(currIR);
+            currIR.line = lineCounter;
+            currIR.opcode = token.lexeme;
+
             switch(token.category) {
                 /* each case will end after 1 line. need to increment the lineCounter, 
                     as well as get the next token (in the new line) */
@@ -83,6 +90,7 @@ public class parser {
         }
         // finished parsing the file!
         // reset everything?        
+        ir.printIR();
         return correct;
     }
 
