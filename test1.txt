@@ -1,0 +1,3 @@
+loadi 123 => r123
+loadir123=>r123
+invalid

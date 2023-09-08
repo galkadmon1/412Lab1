@@ -1,0 +1,9 @@
+load r1 => r2
+store i r1=>r2
+addr1,r2=>r3
+sub r1, r2 =>r3   // comment shoule be ignored
+mult r1,r2 => r3
+// only comment on line 10
+lshift r1,r2 => r3
+rshift r1,r2 => r3
+nop
