@@ -16,6 +16,8 @@ public class main {
 
     public static void main(String[] args) throws IOException {
         
+        // HERE ARE MY CHANGES ! 
+
         String[] args2 = {"-h", "test1.txt"};
         args = args2;
         
